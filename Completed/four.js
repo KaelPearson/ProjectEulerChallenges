@@ -1,3 +1,14 @@
+/*
+    https://projecteuler.net/problem=4
+    A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+    Find the largest palindrome made from the product of two 3-digit numbers.
+
+    Finds largest palindrome made by three digits by going through list and then checking to see if its a palindrome
+    Probably faster if I worked backwards through numbers
+*/
+
+
 var highest = 999;
 var lowest = 100;
 console.log(getBiggestPalindrone());

@@ -1,3 +1,15 @@
+/*
+    https://projecteuler.net/problem=3
+    The prime factors of 13195 are 5, 7, 13 and 29.
+
+    What is the largest prime factor of the number 600851475143 ?
+
+    This can be made much more efficent by use of Sieve of Erathenos however this problem didnt need it so I waited till another to
+    implement it
+    Checks if factor then checks if factor is prime then adds to array
+*/
+
+
 var numberToFactor = 600851475143;
 var factors = [];
 getFactor(numberToFactor);
