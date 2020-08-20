@@ -8,14 +8,19 @@
     What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
 '''
 import time
-nums = [0,1,2]
-
+import itertools
+nums = [0,1,2,3,4,5,6,7,8,9]
 def getAllCombinations(arr):
     combinations = []
-    return combinations
+    num = 0
+    for value in itertools.permutations(arr, 10):
+        num += 1
+        if(num == 1000000):
+            return value
+        
 def main():
     startTime = time.time()
-    print()
+    print(getAllCombinations(nums))
     endTime = time.time()
     print(endTime - startTime, " seconds taken")
 
