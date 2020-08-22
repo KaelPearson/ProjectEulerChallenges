@@ -21,8 +21,8 @@ def sieve(limit):
     return newArr
 # get 0 - 1 less than limit for a
 def getAllNumbersInArr(limit):
-    arr = []
-    for i in range(0,limit):
+    arr = [0]
+    for i in range(1,limit):
         arr.append(i)
         arr.append(-i)
     return arr
