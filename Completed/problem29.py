@@ -29,7 +29,7 @@ def getAllPowers(aHighest,bHighest):
     return newArr
 def main():
     startTime = time.time()
-    print(getAllPowers(5,5))
+    print(getAllPowers(100,100))
     endTime = time.time()
     print(endTime - startTime, " Seconds taken")
 
