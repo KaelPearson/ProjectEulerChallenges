@@ -26,7 +26,7 @@ def check(num1,num2,num3):
     if(len(arr) != 9):
         return False
     arr.sort()
-    for i in range(1,len(arr)):
+    for i in range(1,len(arr) + 1):
         if(arr[i-1] != i):
             return False
     return True
@@ -44,8 +44,6 @@ def totalNonDupes(arr):
         if(arr[i] != arr[i+1]):
             newArr.append(arr[i])
     newArr.append(arr[len(arr) - 1])
-    print(arr)
-    print(newArr)
     for i in newArr:
         sum += i
     return sum
