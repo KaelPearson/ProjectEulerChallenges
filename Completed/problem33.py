@@ -1,6 +1,14 @@
 '''
+    https://projecteuler.net/problem=33
 
-'''
+    The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is correct, is obtained by cancelling the 9s.
+
+    We shall consider fractions like, 30/50 = 3/5, to be trivial examples.
+
+    There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.
+
+    If the product of these four fractions is given in its lowest common terms, find the value of the denominator.
+''' 
 import time
 import math
 
@@ -43,12 +51,13 @@ def checkAll():
             if(checkDec(k,i)):
                 arrNum.append(k)
                 arrDeno.append(i)
-    print(arrNum)
-    print(arrDeno)
-    sum = 0.0
-    for i in range(0,len(arrNum)):
-        sum += arrNum[i] / arrDeno[i]
-    return sum
+    prodOfDeno = 1
+    for i in arrDeno:
+        prodOfDeno *= i
+    prodOfNum = 1
+    for i in arrNum:
+        prodOfNum *= i
+    return prodOfDeno / prodOfNum
 def main():
     startTime = time.time()
     print(checkAll())
