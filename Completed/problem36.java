@@ -1,3 +1,5 @@
+package Completed;
+
 public class problem36 {
     public static void main(String args[]){
         int sum = 0;
