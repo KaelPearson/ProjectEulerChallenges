@@ -7,6 +7,7 @@
 
     NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 */
+package Completed;
 import java.util.*;
 public class problem37 {
     public static void main(String args[]){
