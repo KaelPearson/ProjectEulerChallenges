@@ -56,7 +56,7 @@ def checkIfPoss(num):
     return True
 def main():
     startTime = time.time()
-    primesUnder = getAllPrimesUnder(000000)
+    primesUnder = getAllPrimesUnder(1000000)
     print(len(checkCircularPrime(primesUnder)))
     print(time.time() - startTime, " Seconds Taken")
 
